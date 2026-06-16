@@ -6,3 +6,7 @@ pydantic_settings==2.14.1
 PyJWT==2.13.0
 redis==8.0.0
 SQLAlchemy==2.0.50
+uvicorn[standard]==0.38.0
+asyncpg
+pwdlib[argon2]
+argon2-cffi
