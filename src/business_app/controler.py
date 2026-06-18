@@ -50,6 +50,7 @@ async def get_yelp_business(db: AsyncSession, page: int, limit: int, sort: str):
 
 async def get_enroll_business(db: AsyncSession, page: int, limit: int, sort: str):
     cache_key = f"enroll:{page}:{limit}:{sort}"
+
     cached = await redis_client.get(cache_key)
 
     if cached:
